@@ -52,27 +52,27 @@ spring:
     gateway:
       routes:
         - id: User
-          uri: http://User:8080
+          uri: http://user:8080
           predicates:
             - Path=/users/** 
         - id: Recruit
-          uri: http://Recruit:8080
+          uri: http://recruit:8080
           predicates:
             - Path=/recruits/** 
         - id: App
-          uri: http://App:8080
+          uri: http://app:8080
           predicates:
             - Path=/apps/** 
         - id: RecruitProcess
-          uri: http://RecruitProcess:8080
+          uri: http://recruitprocess:8080
           predicates:
             - Path=/recruitProcesses/** 
         - id: RecruitHistory
-          uri: http://RecruitHistory:8080
+          uri: http://recruitprocessview:8080
           predicates:
             - Path= /recruitProcessViews/**
         - id: Notice
-          uri: http://Notice:8080
+          uri: http://notice:8080
           predicates:
             - Path= 
       globalcors:
