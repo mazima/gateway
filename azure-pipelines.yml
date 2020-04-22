@@ -121,6 +121,7 @@ stages:
                   labels:
                     app: $(imageRepository)
                 spec:
+                  type: LoadBalancer
                   ports:
                     - port: 8080
                       targetPort: 8080
